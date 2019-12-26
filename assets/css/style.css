@@ -35,6 +35,12 @@ p {
     height: 100vh;
 }
 
+@media (max-height: 400px) {
+    .wrapper {
+        height: 100%;
+    }
+}
+
 .header {
     margin: 3rem 1rem;
 }
@@ -469,10 +475,6 @@ p {
     outline: 0;
 }
 
-.footer {
-    margin-top: .5rem;
-}
-
 .footer__inner {
     padding: 1.2rem 0;
 }
@@ -520,7 +522,7 @@ p {
 }
 
 .modal-content {
-    padding: 1.5rem;
+    padding: 1.5rem 2rem;
     border-radius: 1rem;
     border: none;
 }
