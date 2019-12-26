@@ -8,6 +8,7 @@ body {
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     line-height: 1.5;
+    height: 100%;
     background-color: #fafafa;
 }
 
@@ -33,12 +34,7 @@ p {
 
 .wrapper {
     height: 100vh;
-}
-
-@media (max-height: 400px) {
-    .wrapper {
-        height: 100%;
-    }
+    min-height: 100%;
 }
 
 .header {
