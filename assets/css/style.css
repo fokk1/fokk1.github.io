@@ -36,6 +36,18 @@ p {
     height: 100%;
 }
 
+@media (max-height: 420px) {
+    .wrapper {
+        height: auto;
+    }
+}
+
+@media (max-height: 860px) {
+    .wrapper-portfolio {
+        height: auto;
+    }
+}
+
 .header {
     margin: 3rem 1rem;
 }
@@ -347,7 +359,7 @@ p {
 }
 
 .portfolio__item:hover .portfolio__img {
-    opacity: .4;
+    opacity: 0.4;
 }
 
 .portfolio__link {
@@ -359,6 +371,8 @@ p {
     display: block;
     max-width: 100%;
     height: auto;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
 }
 
 .portfolio__text {
@@ -374,10 +388,10 @@ p {
     line-height: 1.1;
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
-    -webkit-transition: -webkit-transform .2s linear;
-    transition: -webkit-transform .2s linear;
-    transition: transform .2s linear;
-    transition: transform .2s linear, -webkit-transform .2s linear;
+    -webkit-transition: -webkit-transform 0.2s linear;
+    transition: -webkit-transform 0.2s linear;
+    transition: transform 0.2s linear;
+    transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 
 .slider__arrows {
