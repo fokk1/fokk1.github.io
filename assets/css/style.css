@@ -16,6 +16,12 @@ body.no-scroll {
     overflow: hidden;
 }
 
+@media (max-height: 480px) {
+    body {
+        min-height: 100vh;
+    }
+}
+
 *,
 *:after,
 *:before {
@@ -34,18 +40,6 @@ p {
 
 .wrapper {
     height: 100%;
-}
-
-@media (max-height: 420px) {
-    .wrapper {
-        height: auto;
-    }
-}
-
-@media (max-height: 860px) {
-    .wrapper-portfolio {
-        height: auto;
-    }
 }
 
 .header {
@@ -98,10 +92,10 @@ p {
     font-weight: 500;
     text-decoration: none;
     margin-right: 3rem;
-    padding: .5rem 2rem;
+    padding: 0.5rem 2rem;
     border-radius: 1.7rem;
-    -webkit-transition: background-color .1s linear, color .2s linear;
-    transition: background-color .1s linear, color .2s linear;
+    -webkit-transition: background-color 0.1s linear, color 0.2s linear;
+    transition: background-color 0.1s linear, color 0.2s linear;
 }
 
 .nav__link:hover {
@@ -117,7 +111,7 @@ p {
 
 @media (max-width: 992px) {
     .nav__link {
-        margin-right: 0;
+        margin-right: 0.5rem;
     }
 }
 
@@ -484,11 +478,6 @@ p {
     outline: 0;
 }
 
-.footer {
-    -webkit-box-flex: 0;
-    flex: 0 0 auto;
-}
-
 .footer__inner {
     padding: 1.2rem 0;
 }
@@ -519,10 +508,10 @@ p {
     width: 25px;
     height: 25px;
     fill: #ababab;
-    -webkit-transition: fill .2s linear, -webkit-transform .2s linear;
-    transition: fill .2s linear, -webkit-transform .2s linear;
-    transition: transform .2s linear, fill .2s linear;
-    transition: transform .2s linear, fill .2s linear, -webkit-transform .2s linear;
+    -webkit-transition: fill 0.2s linear, -webkit-transform 0.2s linear;
+    transition: fill 0.2s linear, -webkit-transform 0.2s linear;
+    transition: transform 0.2s linear, fill 0.2s linear;
+    transition: transform 0.2s linear, fill 0.2s linear, -webkit-transform 0.2s linear;
 }
 
 .footer__icons:hover {
