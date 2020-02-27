@@ -1,2 +1,2 @@
 # fokk1.github.io
-My site
+New Version is here https://mysite-portfolio.now.sh
